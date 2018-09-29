@@ -6,8 +6,8 @@ class Rotas{
 
     private $uri;
 
-    function __construct($uri){
-        $this->uri = $uri;
+    function __construct(){
+        $this->uri = str_replace("/index.php", "", $_SERVER['PHP_SELF']);
     }
 
     public function get($rota, $controller){

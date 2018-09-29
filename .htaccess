@@ -3,4 +3,4 @@ RewriteRule %{REQUEST_FILENAME} !-f
 RewriteRule %{REQUEST_FILENAME} !-d
 RewriteCond $1 !^(index\.php|public|css|js|png|jpg|gif|robots\.txt)
 RewriteCond %{SCRIPT_FILENAME} !(.*)\.(js|pdf|css|jpg|JPG|PNG|gif|png|jpeg|woff2|woff|less|html|xls|docx|php)
-RewriteRule ^(.*)$ index.php?uri=$1
+RewriteRule ^(.*)$ index.php/$1

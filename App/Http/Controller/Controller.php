@@ -11,7 +11,7 @@ class Controller{
 
     function __construct(){
 
-        $this->twig = new Twig_Environment(new Twig_Loader_Filesystem(ROOT.'/Twig/templates'), [
+        $this->twig = new Twig_Environment(new Twig_Loader_Filesystem(ROOT.'/Views'), [
             //'cache' => ROOT.'/Twig/compilation_cache',
         ]);
     }
