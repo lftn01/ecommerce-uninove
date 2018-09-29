@@ -8,5 +8,6 @@ require __DIR__."/App/Rotas/Rotas.php";
 $rotas = new App\Rotas\Rotas();
 
 $rotas->get('/', 'PageController@index');
-$rotas->get('/page/home', 'PageController@home');
+$rotas->get('/home', 'PageController@home');
 $rotas->get('/contato', 'PageController@contato');
+$rotas->get404();
